@@ -82,6 +82,11 @@ card graveyard:
     key(m)
     key(g)
 
+card discard:
+    mouse_click(1)
+    key(m)
+    key(g)
+
 card exile:
     mouse_click(1)
     key(m)

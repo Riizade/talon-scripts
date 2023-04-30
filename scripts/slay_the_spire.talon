@@ -1,0 +1,44 @@
+app.name: Slay the Spire
+-
+map:
+    key(m)
+deck:
+    key(d)
+draw:
+    key(a)
+discard:
+    key(s)
+exhaust:
+    key(x)
+end:
+    key(e)
+end turn:
+    key(e)
+finish:
+    key(e)
+peek:
+    key(space)
+up:
+    key(up)
+down:
+    key(down)
+left:
+    key(left)
+right:
+    key(right)
+card <number>:
+    insert(number)
+release:
+    key(down)
+other:
+    key(down)
+back:
+    key(escape)
+escape:
+    key(escape)
+confirm:
+    key(enter)
+play:
+    key(enter)
+enter:
+    key(enter)
