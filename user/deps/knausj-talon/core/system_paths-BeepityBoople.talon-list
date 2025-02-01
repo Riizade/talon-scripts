@@ -1,0 +1,17 @@
+list: user.system_paths
+hostname: BeepityBoople
+-
+user: C:\Users\riiza
+desktop: C:\Users\riiza\OneDrive\Desktop
+desk: C:\Users\riiza\Desktop
+documents: C:\Users\riiza\OneDrive\Documents
+docks: C:\Users\riiza\Documents
+downloads: C:\Users\riiza\Downloads
+music: C:\Users\riiza\Music
+pictures: C:\Users\riiza\OneDrive\Pictures
+videos: C:\Users\riiza\Videos
+talon home: C:\Users\riiza\AppData\Roaming\talon
+talon recordings: C:\Users\riiza\AppData\Roaming\talon\recordings
+talon user: C:\Users\riiza\AppData\Roaming\talon\user
+profile: C:\Users\riiza
+one drive: C:\Users\riiza\OneDrive
