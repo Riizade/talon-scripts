@@ -1,9 +1,8 @@
-Unofficial Talon Head Up Display
-=====
+# Unofficial Talon Head Up Display
 
 ![Overview image](/docs/intro.png)
 
-The HUD is a user interface that helps improve your workflow. Inspired by gaming HUDs, it is meant to show just the right amount of info to your screen without getting in the way of your actual work. It is resizable, scalable and placable in whatever combination you can come up with, so only the screen space that you allow will be used, just as you left it.  
+The HUD is a user interface that helps improve your workflow. Inspired by gaming HUDs, it is meant to show just the right amount of info to your screen without getting in the way of your actual work. It is resizable, scalable and placable in whatever combination you can come up with, so only the screen space that you allow will be used, just as you left it.
 
 It combines voice commands with clickable buttons, allowing for seemless transitions between using your regular old controls and your voice command flow.  
 It also has keyboard navigation enabled, so you can navigate the widgets using your keyboard shortcuts instead.
@@ -14,42 +13,43 @@ This makes the HUD excellent for switching between a single laptop screen, and c
 By default, the HUD comes in a light and a dark mode, but you can create other themes yourself as well!
 
 ## Table of contents
+
 1. [Installation and fixing](#installation)
 2. [Important voice commands](#important-voice-commands)
 3. [Available content](#available-content)
-    1. [Talon mode tracking](#talon-mode-tracking--turned-on-by-default-)
-    2. [Speech history](#speech-history--turned-on-by-default-)
-    3. [Microphone muting and management](#microphone-management)
-	4. [Language tracking](#language-tracking)
-	5. [Programming language tracking](#programming-language-tracking)
-	6. [Focus tracking](#focus-tracking)
-	7. [Documentation](#documentation)
-	8. [Walkthroughs](#walkthroughs)
-	9. [Debugging](#debugging)
-3. [Accessibility features](#accessibility-features)
-	1. [Keyboard controls](#keyboard-controls)
-	2. [Screen reader usage](#screen-reader-usage)	
-4. [Customizing the HUD](#customizing-the-hud)
-	1. [Hiding and showing widgets](#hiding-and-showing-widgets)
-	2. [Repositioning widgets](#repositioning-widgets)	
-    3. [Changing the size of text and widgets](#changing-the-size-of-text-and-widgets)
-	4. [Changing alignment of widgets](#changing-alignment-of-widgets)
-	5. [Animations](#animations)
-	6. [List of available widgets](#list-of-available-widgets)
-5. [Advanced usage](#advanced-usage)
-    1. [Changing appearance](APPEARANCE.md)
-	2. [Preferences folder](#preferences-folder)
-	3. [Talon HUD environments](#talon-hud-environments)
-	4. [Log messages](CUSTOMIZATION.md#log-messages)
-	5. [Text content, documentation and walkthrough creation](CUSTOMIZATION.md#creating-text-content)	
-	6. [Status icon creation](CUSTOMIZATION.md#status-icon-content)
-	7. [Eyetracker content](CUSTOMIZATION.md#eyetracker-content)
-	8. [Right click options](CUSTOMIZATION.md#right-click-options)
-	9. [Sticky content creation](CUSTOMIZATION.md#sticky-content)
-6. [Miscellaneous](#miscellaneous)
-    1. [Roadmap](#roadmap)
-	2. [Development philosophy and guidelines](#development-philosophy-and-guidelines)
-	3. [Acknowledgements](#acknowledgements)
+   1. [Talon mode tracking](#talon-mode-tracking--turned-on-by-default-)
+   2. [Speech history](#speech-history--turned-on-by-default-)
+   3. [Microphone muting and management](#microphone-management)
+   4. [Language tracking](#language-tracking)
+   5. [Programming language tracking](#programming-language-tracking)
+   6. [Focus tracking](#focus-tracking)
+   7. [Documentation](#documentation)
+   8. [Walkthroughs](#walkthroughs)
+   9. [Debugging](#debugging)
+4. [Accessibility features](#accessibility-features)
+   1. [Keyboard controls](#keyboard-controls)
+   2. [Screen reader usage](#screen-reader-usage)
+5. [Customizing the HUD](#customizing-the-hud)
+   1. [Hiding and showing widgets](#hiding-and-showing-widgets)
+   2. [Repositioning widgets](#repositioning-widgets)
+   3. [Changing the size of text and widgets](#changing-the-size-of-text-and-widgets)
+   4. [Changing alignment of widgets](#changing-alignment-of-widgets)
+   5. [Animations](#animations)
+   6. [List of available widgets](#list-of-available-widgets)
+6. [Advanced usage](#advanced-usage)
+   1. [Changing appearance](APPEARANCE.md)
+   2. [Preferences folder](#preferences-folder)
+   3. [Talon HUD environments](#talon-hud-environments)
+   4. [Log messages](CUSTOMIZATION.md#log-messages)
+   5. [Text content, documentation and walkthrough creation](CUSTOMIZATION.md#creating-text-content)
+   6. [Status icon creation](CUSTOMIZATION.md#status-icon-content)
+   7. [Eyetracker content](CUSTOMIZATION.md#eyetracker-content)
+   8. [Right click options](CUSTOMIZATION.md#right-click-options)
+   9. [Sticky content creation](CUSTOMIZATION.md#sticky-content)
+7. [Miscellaneous](#miscellaneous)
+   1. [Roadmap](#roadmap)
+   2. [Development philosophy and guidelines](#development-philosophy-and-guidelines)
+   3. [Acknowledgements](#acknowledgements)
 
 ## Installation
 
@@ -73,10 +73,10 @@ All voice commands are available in the .talon files inside of the HUD, while so
 
 ### Talon Mode tracking ( turned on by default )
 
-Talon comes in a variety of modes, like the command mode in which you utter commands, or the sleep mode where no commands are used but the wake word. To keep track of what mode you are currently in, the Talon HUD offers a status bar icon that can be clicked. 
+Talon comes in a variety of modes, like the command mode in which you utter commands, or the sleep mode where no commands are used but the wake word. To keep track of what mode you are currently in, the Talon HUD offers a status bar icon that can be clicked.
 This is added by default, and when clicked, turns Talon either in sleep mode, or from sleep mode back to your previous mode, be it command or dictation mode.  
 Removing the mode icon is possible as well to keep a more minimal look, by saying `status bar remove mode indicator` or by right clicking the status bar and clicking 'Remove mode indicator'.  
-The status bar will always show whether you are in sleep mode or not at a glance, regardless of when you have mode icon added or not, by changing the appearance of the status bar itself.  
+The status bar will always show whether you are in sleep mode or not at a glance, regardless of when you have mode icon added or not, by changing the appearance of the status bar itself.
 
 You can change the mode detection, toggle and available modes yourself as well, if your set up requires a more personal touch. To see how, read the link below.
 
@@ -100,7 +100,7 @@ This comes in handy when you have multiple microphone set ups, like a laptop mic
 
 ### Language tracking
 
-For the multilingual folks out there, switching between different languages for dictation is a necessity to keep your workflow working with voice. For that purpose, you can add a language icon indicating your language on the status bar by saying `status bar add language` or right clicking the status bar to the option Add language.  
+For the multilingual folks out there, switching between different languages for dictation is a necessity to keep your workflow working with voice. For that purpose, you can add a language icon indicating your language on the status bar by saying `status bar add language` or right clicking the status bar to the option Add language.
 
 [Customizing languages](CUSTOMIZATION.md#customizing-language-tracking)
 
@@ -108,7 +108,7 @@ For the multilingual folks out there, switching between different languages for 
 
 A lot of programmers inhabit the Talon Voice community, and with them come many different programming languages. With those programming languages come different commands, and usually these are kept track of by the file extension available in a program, or by manually forcing a certain language to be used.  
 To make sure you know what programming language context you are in, you can add a language icon to your status bar by saying `status bar add code language` or right clicking the status bar and clicking 'Add code language'.  
-You can add and remove programming languages icons yourself, by following the instructions below.  
+You can add and remove programming languages icons yourself, by following the instructions below.
 
 [Customizing programming languages](CUSTOMIZATION.md#customizing-programming-languages)
 
@@ -141,9 +141,9 @@ When you are working with, or working on, your Talon scripts, it is often hard t
 
 ## Accessibility features
 
-The HUD aims to make your voice workflows accessible. From the get-go it has a focus on offloading things you need to remember into the visual spectrum. As time went on, things like theming, resizability and clicking were added as well, keeping up with the trend of making sure as many people could use the HUD as possible. 
+The HUD aims to make your voice workflows accessible. From the get-go it has a focus on offloading things you need to remember into the visual spectrum. As time went on, things like theming, resizability and clicking were added as well, keeping up with the trend of making sure as many people could use the HUD as possible.
 
-However I did not originally take into account people with low-vision, or people who use screen readers and keyboards rather than mice or eyetrackers to do their daily computing. To help those people find a place in the Talon voice community as well, I've begun adding features to accommodate. 
+However I did not originally take into account people with low-vision, or people who use screen readers and keyboards rather than mice or eyetrackers to do their daily computing. To help those people find a place in the Talon voice community as well, I've begun adding features to accommodate.
 
 ### Keyboard controls
 
@@ -154,10 +154,11 @@ You can also enable auto focus. Auto focus focuses the HUD element that has just
 There are also keyboard shortcuts to toggle focus on the HUD as well, by default this is **Alt-Shift-End**, but you can change it inside of keys.talon. I personally have a large keyboard with a numpad on the side, so I tend to bind focusing to the **divide** key, or key(keypad_divide) inside of .talon files.
 
 These are all the currently available keyboard controls:
+
 - **Tab and Shift-Tab**: Changes the focus of the available content in the widget and loops back around. The focus is shown as a border around the content.
 - **Space**: This activates the currently focused element.
 - **Left and right arrow keys**: When the main widget element is focused, this switches between the active widgets.
-- **Up and down arrow keys**: Inside choice and context menus, this navigates between the available choices. There is no looping back to the first element. 
+- **Up and down arrow keys**: Inside choice and context menus, this navigates between the available choices. There is no looping back to the first element.
 - **Page up and page down**: When a text widget or choice widget is focused, this moves between the available pages of the current content.
 - **Escape**: Unfocuses the current element, either by going up to the main widget element, or out of the HUD entirely.
 - **Enter**: Actives the current selection, but inside a choice widget with multiple choices, submits all the selected choices instead.
@@ -176,7 +177,7 @@ Some widgets can have alternative names too, which are the titles shown on top o
 ### Hiding and showing widgets
 
 You can hide specific widgets by saying `head up hide <widget name>`. Some content, like text that gets published, might still make that widget show up again, but you can also manually show the widget by saying `head up show <widget name>`.  
-You can also use the widget shorthand, which is `<widget name> hide` and `<widget name> show`. 
+You can also use the widget shorthand, which is `<widget name> hide` and `<widget name> show`.
 
 In case you want to make all widgets invisible temporarily, for instance if you want to take a screenshot, you can use the 'user.hud_set_visibility' action inside of your talon files.  
 'user.hud_set_visibility(0)' hides all the widgets, and 'user.hud_set_visibility(1)' shows them all again.
@@ -190,7 +191,7 @@ For some specific widgets like the cursor tracker where the position depends on 
 
 ### Changing the size of text and widgets
 
-Changing the font size of a widget to make the text more readable is done using the command `head up text scale <widget name>` and by dragging the mouse around. You can confirm the changes by saying `head up confirm` or cancel the changes by saying `head up cancel`.  
+Changing the font size of a widget to make the text more readable is done using the command `head up text scale <widget name>` and by dragging the mouse around. You can confirm the changes by saying `head up confirm` or cancel the changes by saying `head up cancel`.
 
 Widgets have two kinds of sizes, their minimal size, and their maximum growable size.
 
@@ -198,13 +199,13 @@ You can also change the minimal size that certain widgets take on by saying `hea
 
 To change the maximum growable size of a widget, hold your mouse in the direction from the widget where you want it to grow, and say `head up expand <widget name>`, with the same confirmation and cancelation commands as the other commands.
 
-Some widgets also have a more collapsed, minimized state, which you can activate by saying `head up minimize <widget name>` or `<widget name> minimize`. You can undo the minimization by saying `head up mazimize <widget name>` or `<widget name> maximize`.    
+Some widgets also have a more collapsed, minimized state, which you can activate by saying `head up minimize <widget name>` or `<widget name> minimize`. You can undo the minimization by saying `head up mazimize <widget name>` or `<widget name> maximize`.
 
 ### Changing alignment of widgets
 
-You can change the alignment of widgets by saying `head up align <widget name> <alignment>` where the alignment can be anything from `top`, `bottom`, `left`, `right` or in some widgets `center`. The alignment might also be connected to the minimal and maximal growth size as explained above as well.  
+You can change the alignment of widgets by saying `head up align <widget name> <alignment>` where the alignment can be anything from `top`, `bottom`, `left`, `right` or in some widgets `center`. The alignment might also be connected to the minimal and maximal growth size as explained above as well.
 
-###	Animations
+### Animations
 
 Most of the Talon HUD widgets have animations turned on by default, but you might not like those animations yourself. You can turn them off by saying `head up basic <widget name>`, or turn them back on by saying `head up fancy <widget name>`.
 
@@ -212,13 +213,13 @@ Most of the Talon HUD widgets have animations turned on by default, but you migh
 
 ![Image showing the names of all the widgets next to them](/docs/widget_overview.png)
 
-(*) The name of these widgets may change based on the title of the panel.
+(\*) The name of these widgets may change based on the title of the panel.
 
 - Status bar: The bar on the bottom right of the screen with clickable icons.
 - Event log: The log that is shown above the status bar showing all the commands.
-- Text panel*: The text panel on the top right part of the screen.
-- Choices*: The choice panel that is shown in the center of the screen.
-- Documentation*: The documentation panel on the left.
+- Text panel\*: The text panel on the top right part of the screen.
+- Choices\*: The choice panel that is shown in the center of the screen.
+- Documentation\*: The documentation panel on the left.
 - Walkthrough: The documentation panel on the left.
 - Ability bar: An optional bar left of the status bar containing non-clickable icons.
 - Screen overlay: A widget that can put labels all over the screen. Only used in the focus tracker so far.
@@ -235,9 +236,9 @@ For customizing and creating your own content, you can have a look at the [Custo
 
 The 'preferences' folder inside of the HUD contains all the changes the user has made to the HUD. All the files inside are non-critical, meaning that you can remove them and they will be regenerated based on the default settings when you next start up Talon.  
 The user preferences are split into two files, the monitor file which contains all the positional information based on the current monitor set up, and the widget_settings.csv file, which contains all the non-positional information like widget enabled status, alignment and attached content.  
-If you have another talon hud environment ( explained below ), you will have more files in the preferences folder as well, prefixed by the talon hud environment. These files are used purely for that environment.  
+If you have another talon hud environment ( explained below ), you will have more files in the preferences folder as well, prefixed by the talon hud environment. These files are used purely for that environment.
 
-On top of widget related settings, the preferences folder can also contain files that are used for the content creation. An example of this is the programming_languages.csv file which contains available programming languages, the walkthrough.csv file which keeps track of all finished walkthroughs, and the hud_preferred_microphone.txt file, which contains the prefered microphone to toggle to with the status bar microphone toggle.  
+On top of widget related settings, the preferences folder can also contain files that are used for the content creation. An example of this is the programming_languages.csv file which contains available programming languages, the walkthrough.csv file which keeps track of all finished walkthroughs, and the hud_preferred_microphone.txt file, which contains the prefered microphone to toggle to with the status bar microphone toggle.
 
 If you want to customize the place where you keep your preferences, so you can bundle them all in one place for example, you can change the `configuration.py` file to change the directories there.
 
@@ -245,7 +246,7 @@ If you want to customize the place where you keep your preferences, so you can b
 
 You can change your HUD layout entirely using the context management of Talon, saving you from having to say voice commands to set up your desired content and layout.  
 Let's say you want to change the placement and enabled widgets when you enter a browser.  
-This is entirely achievable using the 'user.talon_hud_environment' setting.  
+This is entirely achievable using the 'user.talon_hud_environment' setting.
 
 We implement this in the following talon_hud_browser.talon file example.  
 When you focus a browser after adding a talon file like this, it will automatically make a new set of preference files specifically for the 'browser_hud' Talon HUD environment.
@@ -286,7 +287,7 @@ The User preferably doesn't have to change code when changing widgets around, an
 The **Scripter** wants to display their awesome creations in a visually appealing way without actually having to write out all the code required for that. They spent a bunch of time making an output that is useful, like an autocomplete feature or a command log, and they really don't want to spend more time fiddling around with canvas stuff.  
 The Scripter just sends their content over to the HUD, which knows where the user wants it and in what way.
 
-The **Themer** wants to make an amazing visual experience happen, but do not really want to deal with the nitty gritty details of the widgets themselves. They want to change icons, colours and other visual properties of the UI themselves. And they do not like being limited, preferably having as much freedom of expression as possible.  
+The **Themer** wants to make an amazing visual experience happen, but do not really want to deal with the nitty gritty details of the widgets themselves. They want to change icons, colours and other visual properties of the UI themselves. And they do not like being limited, preferably having as much freedom of expression as possible.
 
 These three persona's are the spirit of this repository. As such, when new content is added to this repository, it should try to adhere to the needs and wishes above.
 
