@@ -10,7 +10,7 @@ settings():
 ([disengage | engage | toggle]) night vision:
     key(v)
 
-deploy heatsink:
+(deploy | eject) heatsink:
     key(b)
 
 ([disengage | engage | toggle]) flight assist:
@@ -86,6 +86,9 @@ full spectrum [analysis]:
 
 [(enable | disable | switch)] (analysis | combat | cockpit) [mode]:
     key(m)
+
+[(enable | disable | toggle)] (orbital lines):
+    key(=)
 
 (thanks | thank you) blinky:
     speech.disable()
