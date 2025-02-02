@@ -34,6 +34,29 @@ deploy heatsink:
 [(deploy | engage | retract | toggle)] landing gear:
     key(n)
 
+docking:
+    key(x) # open external panel
+    key(e) # tab right 2x
+    key(e)
+    key(space) # select station
+    key(d) # select request docking
+    key(space) # submit request
+
+target (team | teammate) one:
+    key(7)
+
+target (team | teammate) two:
+    key(8)
+
+target (team | teammate) three:
+    key(9)
+
+target next (destination | system):
+    key(,)
+
+full spectrum [analysis]:
+    key(k)
+
 # next (fire group | weapon):
 #     key(])
     
